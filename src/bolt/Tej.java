@@ -4,13 +4,21 @@ import java.util.Date;
 
 public class Tej {
 	
+	private final int LITER = 10;
+	private final int FELLITER = 5;
+	private final int POHAR = 2;
+	private final double ZSIROS = 3.5;
+	private final double FELZSIROS = 2.8;
+	
+	private long vonalKod;
 	private int urtartalom;
 	private String gyarto;
 	private Date szavatossagido;
 	private double zsirtartalom;
 	private long ar;
 	
-	public Tej(int urtartalom, String gyarto, Date szavatossagido, double zsirtartalom, long ar) {
+	public Tej(long vonalKod, int urtartalom, String gyarto, Date szavatossagido, double zsirtartalom, long ar) {
+		this.vonalKod = vonalKod;
 		this.urtartalom = urtartalom;
 		this.gyarto = gyarto;
 		this.szavatossagido = szavatossagido;
@@ -18,6 +26,10 @@ public class Tej {
 		this.ar = ar;
 	}
 
+	public long getVonalKod() {
+		return vonalKod;
+		
+	}
 	public boolean joMeg(){
 		Date currentDate = new Date();
 		if(this.szavatossagido.compareTo(currentDate) > 0){
@@ -48,7 +60,8 @@ public class Tej {
 
 	@Override
 	public String toString() {
-		return "Tej: [Űrtartalom =" + urtartalom + 
+		return "Tej: [Vonalkód = " + vonalKod +
+				", Űrtartalom =" + urtartalom + 
 				", Gyártó =" + gyarto + 
 				", Szavatossagidő =" + szavatossagido+ 
 				", Zsírtartalom =" + zsirtartalom + 
