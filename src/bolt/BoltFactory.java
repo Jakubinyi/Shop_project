@@ -14,7 +14,7 @@ public abstract class BoltFactory {
 		return new TartosTej(vonalKod,  gyarto, szavatossagiIdo, urtartalom, zsirtartalom);
 	}
 	
-	public Tej ujFeltosTej(Long vonalKod, String gyarto, Date szavatossagiIdo, int urtartalom, double zsirtartalom) {
+	public Tej ujFeltartosTej(Long vonalKod, String gyarto, Date szavatossagiIdo, int urtartalom, double zsirtartalom) {
 		return new FeltartosTej(vonalKod, gyarto, szavatossagiIdo, urtartalom, zsirtartalom);
 	}
 	
