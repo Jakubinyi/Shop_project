@@ -1,8 +1,8 @@
-package tej;
+package bolt.aruk.tej;
 
 import java.util.Date;
 
-import bolt.Tej;
+import bolt.aruk.Tej;
 
 public class FeltartosTej extends Tej {
 
