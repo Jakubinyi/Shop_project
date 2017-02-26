@@ -2,7 +2,8 @@ package bolt;
 
 import java.util.Date;
 
-public class Tej {	
+public abstract class Tej {	
+	
 	public final int LITER = 10;
 	public final int FELLITER = 5;
 	public final int POHAR = 2;
