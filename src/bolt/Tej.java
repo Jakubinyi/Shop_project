@@ -48,11 +48,11 @@ public class Tej {
 
 	@Override
 	public String toString() {
-		return "Tej [urtartalom=" + urtartalom + 
-				", gyarto=" + gyarto + 
-				", szavatossagido=" + szavatossagido+ 
-				", zsirtartalom=" + zsirtartalom + 
-				", ar=" + ar + "]";
+		return "Tej: [Űrtartalom =" + urtartalom + 
+				", Gyártó =" + gyarto + 
+				", Szavatossagidő =" + szavatossagido+ 
+				", Zsírtartalom =" + zsirtartalom + 
+				", Ár =" + ar + "]";
 	}
 	
 	
