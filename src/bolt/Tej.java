@@ -13,14 +13,14 @@ public abstract class Tej {
 	protected Long vonalKod;
 	protected int urtartalom;
 	protected String gyarto;
-	protected Date szavatossagido;
+	protected Date szavatossagiIdo;
 	protected double zsirtartalom;
 	
 	public Tej(Long vonalKod, int urtartalom, String gyarto, Date szavatossagido, double zsirtartalom) {
 		this.vonalKod = vonalKod;
 		this.urtartalom = urtartalom;
 		this.gyarto = gyarto;
-		this.szavatossagido = szavatossagido;
+		this.szavatossagiIdo = szavatossagido;
 		this.zsirtartalom = zsirtartalom;
 	}
 
@@ -30,7 +30,7 @@ public abstract class Tej {
 	}
 	public boolean joMeg(){
 		Date currentDate = new Date();
-		if(this.szavatossagido.compareTo(currentDate) > 0){
+		if(this.szavatossagiIdo.compareTo(currentDate) > 0){
 			return true;
 		} else {
 			return false;
@@ -45,7 +45,7 @@ public abstract class Tej {
 	}
 
 	public Date getSzavatossagido() {
-		return szavatossagido;
+		return szavatossagiIdo;
 	}
 
 	public double getZsirtartalom() {
@@ -57,7 +57,7 @@ public abstract class Tej {
 		return "Tej: [Vonalkód = " + vonalKod +
 				", Űrtartalom =" + urtartalom + 
 				", Gyártó =" + gyarto + 
-				", Szavatossagidő =" + szavatossagido+ 
+				", Szavatossagidő =" + szavatossagiIdo+ 
 				", Zsírtartalom =" + zsirtartalom + "]";
 	}
 	

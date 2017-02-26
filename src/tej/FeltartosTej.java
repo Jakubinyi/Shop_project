@@ -6,8 +6,8 @@ import bolt.Tej;
 
 public class FeltartosTej extends Tej {
 
-	public FeltartosTej(Long vonalKod, int urtartalom, String gyarto, Date szavatossagido, double zsirtartalom) {
-		super(vonalKod, urtartalom, gyarto, szavatossagido, zsirtartalom);
+	public FeltartosTej(Long vonalKod, int urtartalom, String gyarto, Date szavatossagiIdo, double zsirtartalom) {
+		super(vonalKod, urtartalom, gyarto, szavatossagiIdo, zsirtartalom);
 	}
 
 }

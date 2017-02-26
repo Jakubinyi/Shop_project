@@ -6,8 +6,8 @@ import bolt.Tej;
 
 public class TartosTej extends Tej {
 
-	public TartosTej(Long vonalKod, int urtartalom, String gyarto, Date szavatossagido, double zsirtartalom) {
-		super(vonalKod, urtartalom, gyarto, szavatossagido, zsirtartalom);
+	public TartosTej(Long vonalKod, int urtartalom, String gyarto, Date szavatossagiIdo, double zsirtartalom) {
+		super(vonalKod, urtartalom, gyarto, szavatossagiIdo, zsirtartalom);
 	}
 
 }
