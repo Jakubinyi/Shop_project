@@ -4,11 +4,11 @@ import java.util.Date;
 
 public abstract class Tej extends Elelmiszer{	
 	
-	public final int LITER = 10;
-	public final int FELLITER = 5;
-	public final int POHAR = 2;
-	public final double ZSIROS = 3.5;
-	public final double FELZSIROS = 2.8;
+	public static final int LITER = 10;
+	public static final int FELLITER = 5;
+	public static final int POHAR = 2;
+	public static final double ZSIROS = 3.5;
+	public static final double FELZSIROS = 2.8;
 	
 	protected int urtartalom;
 	protected double zsirtartalom;
