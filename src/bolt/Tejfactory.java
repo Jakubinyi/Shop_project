@@ -7,11 +7,11 @@ import tej.FeltartosTej;
 
 public abstract class Tejfactory {
 
-	public Tej ujTartosTej(Long vonalKod, int urtartalom, String gyarto, Date szavatossagiIdo, double zsirtartalom) {
-		return new TartosTej(vonalKod, urtartalom, gyarto, szavatossagiIdo, zsirtartalom);
+	public Tej ujTartosTej(Long vonalKod, String gyarto, Date szavatossagiIdo, int urtartalom, double zsirtartalom) {
+		return new TartosTej(vonalKod,  gyarto, szavatossagiIdo, urtartalom, zsirtartalom);
 	}
 	
-	public Tej ujFeltosTej(Long vonalKod, int urtartalom, String gyarto, Date szavatossagiIdo, double zsirtartalom) {
-		return new FeltartosTej( vonalKod, urtartalom, gyarto, szavatossagiIdo, zsirtartalom);
+	public Tej ujFeltosTej(Long vonalKod, String gyarto, Date szavatossagiIdo, int urtartalom, double zsirtartalom) {
+		return new FeltartosTej(vonalKod, gyarto, szavatossagiIdo, urtartalom, zsirtartalom);
 	}
 }
