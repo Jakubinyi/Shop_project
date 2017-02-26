@@ -42,9 +42,24 @@ public class Bolt {
 	}
 	
 	public Tej vasarolTej(Tej m) {
-		return m;
+		Tej[] newTejpult = new Tej[tejpult.length -1];
+        int counter = 0;
+        for(int i = 0; i < tejpult.length; i++) {
+            if(tejpult[i] != m) {
+                newTejpult[counter] = tejpult[i];
+                counter += 1;
+            }
+        }
+        tejpult = newTejpult;
+        return m;
 	}
 	
 	public void feltoltTej(Tej m) {
+		Tej[] newTejpult = new Tej[tejpult.length+1];
+		for(int i = 0; i < tejpult.length; i++) {
+			newTejpult[i] = tejpult[i];
+		}
+		newTejpult[tejpult.length] = m;
+		tejpult = newTejpult;
 	}
 }
